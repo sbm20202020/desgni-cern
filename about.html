@@ -1,0 +1,174 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<section id="about-us" class="cern-about-us py-5">
+    <style>
+        .cern-about-us {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #e8f5e9, var(--bg-color));
+        }
+
+        .cern-about-us .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cern-about-us .section-title .underline {
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            margin: 0 auto 2rem;
+        }
+
+        .cern-about-us .info-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cern-about-us .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cern-about-us .info-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .cern-about-us .info-card h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .cern-about-us .activities-engagement {
+            background-color: var(--primary-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .cern-about-us .activities,
+        .cern-about-us .engagement {
+            padding: 3rem;
+            color: #fff;
+        }
+
+        .cern-about-us .activities h3,
+        .cern-about-us .engagement h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .cern-about-us .activities ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .cern-about-us .activities li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .cern-about-us .activities li i {
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .cern-about-us .btn {
+            background-color: #fff;
+            color: var(--primary-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .cern-about-us .btn:hover {
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .cern-about-us .activities-engagement {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <div class="container">
+        <div class="section-title text-center mb-5">
+            <h2>À propos de nous</h2>
+            <div class="underline"></div>
+            <p class="lead">La Commission Épiscopale pour les Ressources Naturelles (CERN-CENCO) est le gardien de l'environnement et des ressources naturelles de la République Démocratique du Congo, œuvrant pour un avenir durable et équitable.</p>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-3">
+                <div class="info-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Notre Mission</h3>
+                    <p>Promouvoir une gestion responsable des ressources naturelles et protéger l'environnement.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="info-card">
+                    <i class="fas fa-history"></i>
+                    <h3>Notre Histoire</h3>
+                    <p>Depuis 2007, nous sommes à l'avant-garde de la conservation et du développement durable en RDC.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="info-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Notre Approche</h3>
+                    <p>Collaboration étroite avec les communautés locales pour une gouvernance participative des ressources.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="info-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Notre Impact</h3>
+                    <p>Créer un changement positif à travers l'éducation, le plaidoyer et l'action communautaire.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activities-engagement row">
+            <div class="activities col-md-6">
+                <h3>Nos Activités</h3>
+                <ul>
+                    <li><i class="fas fa-tree"></i> Accompagnement des forêts communautaires</li>
+                    <li><i class="fas fa-chalkboard-teacher"></i> Éducation environnementale</li>
+                    <li><i class="fas fa-bullhorn"></i> Plaidoyer pour la gestion durable des ressources</li>
+                    <li><i class="fas fa-balance-scale"></i> Promotion des droits humains et de la justice sociale</li>
+                </ul>
+            </div>
+            <div class="engagement col-md-6">
+                <h3>Notre Engagement</h3>
+                <p>Nous nous engageons à créer un avenir où les ressources naturelles de la RDC sont gérées de manière durable, où les communautés locales prospèrent, et où l'environnement est protégé pour les générations futures.</p>
+                <a href="#" class="btn">Découvrez notre travail</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
